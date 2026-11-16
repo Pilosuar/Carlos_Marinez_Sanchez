@@ -1,0 +1,25 @@
+# Dependencias
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+build/
+
+# Archivos de registro / servidor
+*.log
+npm-debug.log*
+
+# Variables de entorno
+.env
+.env.local
+.env.production.local
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
