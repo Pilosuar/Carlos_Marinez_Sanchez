@@ -33,7 +33,9 @@ jobs:
       - name: Construir sitio estatico
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+          # La URL de Pages es /Carlos_Marinez_Sanchez/ aunque el repo
+          # se llame Carlos_Marinez_Sanchez.pilosuar.github.io
+          NEXT_PUBLIC_BASE_PATH: /Carlos_Marinez_Sanchez
 
       - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
